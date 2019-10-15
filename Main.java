@@ -1,15 +1,15 @@
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class Main{
-	static public int micros, quantum, tcc, tb;
+	static public int micros, quantum, tcc, tb, counter;
 	static public Stack<Character> proInitial = new Stack<>();
 	static public Stack<Character> proSecond = new Stack<>(); // 1500
 	static public Stack<Character> proThird = new Stack<>();  // 3000
 	static public Stack<Character> proFourth = new Stack<>(); // 4000
 	static public Stack<Character> proFifth = new Stack<>();  // 8000
 	static public HashMap<Character, Integer> process = new HashMap<>();
+	static public TablaMicro[] mic;
+	static public TablaMicro m;
 
 	public static void main(String[] args) {
 		questions();
@@ -74,25 +74,25 @@ public class Main{
 		proFifth.add('Q');
 	}
 
-
 	public static void despachador(){
-		TablaMicro[] mic = new TablaMicro[micros];
-		for(int i=1; i<=micros; i++){
-			mic[i-1] = new TablaMicro(i);
+		mic = new TablaMicro[micros];
+		for(int i=0; i<micros; i++){
+			mic[i] = new TablaMicro(i);
 		}
-
-		TablaMicro m = chooseMicroprocessor(mic);
-
-		processStacks(proInitial, m);
-		processStacks(proSecond, m);
-		processStacks(proThird, m);
-		processStacks(proFourth, m);
-		processStacks(proFifth, m);
+		counter = 0;
+		m = mic[0];
+		processStacks(proInitial, 0);
+		processStacks(proSecond, 1500);
+		processStacks(proThird, 3000);
+		processStacks(proFourth, 4000);
+		processStacks(proFifth, 8000);
+		System.out.println();
+		printMicros();
 	}
 
-	public static void processStacks(Stack<Character> proStack, TablaMicro mic){
+	public static void processStacks(Stack<Character> proStack, int llegadaPro){
+		igualarTiempoLLegada(llegadaPro);
 		float tiempoVenciminetoCuantum = 0;
-		int idMicro = 0;
 		int tiempoEjecucion = 0;
 		int tVencimiento = 0;
 		int tiempoBloqueo = 0;
@@ -100,6 +100,9 @@ public class Main{
 		int tiempoFinal = 0;
 
 		while(!proStack.isEmpty()){
+			chooseMicroprocessor();
+			if(m.getTiempoI() < llegadaPro) m.setTiempoI(llegadaPro);
+
 			tiempoEjecucion = process.get(proStack.peek());
 			if(tiempoEjecucion > 1 && tiempoEjecucion < 401){
 				tiempoBloqueo = tb * 2;
@@ -116,43 +119,67 @@ public class Main{
 			tiempoVenciminetoCuantum = quantum % tiempoVenciminetoCuantum;
 			tVencimiento = (int)tiempoVenciminetoCuantum;
 
-			if(mic.isMicroVacio()){
-				mic.gettCambioContexto().add(0);
-				mic.setMicroVacio(false);
+			if(m.isMicroVacio()){
+				m.gettCambioContexto().add(0);
+				m.setMicroVacio(false);
 				tiempoTotal = 0;
 			}
 			else{
-				mic.gettCambioContexto().add(tcc);
+				m.gettCambioContexto().add(tcc);
 				tiempoTotal = tcc;
 			}
 
 			tiempoTotal = tiempoTotal + tiempoEjecucion + tVencimiento + tiempoBloqueo;
-			int tiempoInicial = mic.getTiempoI();
+			int tiempoInicial = m.getTiempoI();
 			tiempoFinal = tiempoTotal + tiempoInicial;
 
-			mic.getProcess().add(proStack.pop());
-			mic.gettEjecucion().add(tiempoEjecucion);
-			mic.gettVencimientoQ().add(tVencimiento);
-			mic.gettBloqueo().add(tiempoBloqueo);
-			mic.gettTotal().add(tiempoTotal);
-			mic.gettInicial().add(tiempoInicial);
-			mic.gettFinal().add(tiempoFinal);
+			m.getProcess().add(proStack.pop());
+			m.gettEjecucion().add(tiempoEjecucion);
+			m.gettVencimientoQ().add(tVencimiento);
+			m.gettBloqueo().add(tiempoBloqueo);
+			m.gettTotal().add(tiempoTotal);
+			m.gettInicial().add(tiempoInicial);
+			m.gettFinal().add(tiempoFinal);
 
-			mic.setTiempoI(tiempoFinal);
-			System.out.println(tiempoFinal);
+			m.setTiempoI(tiempoFinal);
 		}
 	}
 
-	public static TablaMicro chooseMicroprocessor(TablaMicro[] mic){
-		TablaMicro tM = mic[0];
-		int minTempo = mic[0].getTiempoI();
-		for(TablaMicro t : mic){
-			if(minTempo < t.getTiempoI()){
-				minTempo = t.getTiempoI();
-				tM = t;
+	public static void chooseMicroprocessor(){
+		TablaMicro micro = mic[0];
+		for(int i=0; i<mic.length; i++){
+			if(micro.getTiempoI() > mic[i].getTiempoI()){
+				micro = mic[i];
 			}
-			if(t.getTiempoI() == 0) return t;
+			if(micro.getTiempoI() == 0){
+				m = micro;
+				return;
+			}
 		}
-		return tM;
+		m = micro;
+	}
+
+	public static void igualarTiempoLLegada(int tiempoLlegada){
+		if(tiempoLlegada == 0) return;
+
+		for(int i=0; i<mic.length; i++){
+			if(mic[i].getTiempoI() != 0 && mic[i].getTiempoI() < tiempoLlegada){
+				mic[i].setTiempoI(tiempoLlegada);
+				mic[i].setMicroVacio(true);
+			}
+		}
+	}
+
+	public static void printMicros(){
+		for(TablaMicro t : mic){
+			Iterator<Character> pro = t.getProcess().iterator();
+			Iterator<Integer> data = t.gettFinal().iterator();
+			Iterator<Integer> ini = t.gettInicial().iterator();
+
+			while(pro.hasNext()){
+				System.out.println("ID " + t.getID_Micro() + " process: " + pro.next() +
+						" tiempo inicio " + ini.next() + " tiempo final " + data.next());
+			}
+		}
 	}
 }
