@@ -20,7 +20,7 @@ public class Main{
 
 	public static void questions(){
 		Scanner in = new Scanner(System.in);
-		System.out.println("Dame los Microprosesadores que desas: ");
+		System.out.println("Dame los Microprosesadores que deseas: ");
 		micros = in.nextInt();
 		System.out.println("Dame el tiempo del Quantum: ");
 		quantum = in.nextInt();
@@ -113,11 +113,19 @@ public class Main{
 			if(tiempoEjecucion > 600 && tiempoEjecucion < 801){
 				tiempoBloqueo = tb * 4;
 			}
-			if(tiempoEjecucion > 801 && tiempoEjecucion < 10001){
+			if(tiempoEjecucion > 800 && tiempoEjecucion < 10001){
 				tiempoBloqueo = tb * 5;
 			}
-			tiempoVenciminetoCuantum = quantum % tiempoVenciminetoCuantum;
+			tiempoVenciminetoCuantum = tiempoEjecucion / quantum;
 			tVencimiento = (int)tiempoVenciminetoCuantum;
+
+			if(tVencimiento < tiempoVenciminetoCuantum){
+				tVencimiento = tVencimiento * tcc;
+			}else if(tVencimiento == tiempoVenciminetoCuantum || tVencimiento > tiempoVenciminetoCuantum){
+				tVencimiento = (tVencimiento - 1) * tcc;
+			}
+
+			if(tVencimiento < 0) tVencimiento = 0;
 
 			if(m.isMicroVacio()){
 				m.gettCambioContexto().add(0);
@@ -173,13 +181,21 @@ public class Main{
 	public static void printMicros(){
 		for(TablaMicro t : mic){
 			Iterator<Character> pro = t.getProcess().iterator();
-			Iterator<Integer> data = t.gettFinal().iterator();
-			Iterator<Integer> ini = t.gettInicial().iterator();
+			Iterator<Integer> tCamb = t.gettCambioContexto().iterator();
+			Iterator<Integer> tEje = t.gettEjecucion().iterator();
+			Iterator<Integer> tven = t.gettVencimientoQ().iterator();
+			Iterator<Integer> tBloq = t.gettBloqueo().iterator();
+			Iterator<Integer> tTot = t.gettTotal().iterator();
+			Iterator<Integer> tIni = t.gettInicial().iterator();
+			Iterator<Integer> tFin = t.gettFinal().iterator();
 
+			System.out.println("ID " + t.getID_Micro());
 			while(pro.hasNext()){
-				System.out.println("ID " + t.getID_Micro() + " process: " + pro.next() +
-						" tiempo inicio " + ini.next() + " tiempo final " + data.next());
+				System.out.println("Proceso: " + pro.next() + " TCC: " + tCamb.next() + " tEje: " + tEje.next() +
+						" TVC " + tven.next() + " TB " + tBloq.next() + " TT " + tTot.next() + " TI " + tIni.next()
+						+ " TF: " + tFin.next());
 			}
+			System.out.println("");
 		}
 	}
 }

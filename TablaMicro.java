@@ -5,7 +5,6 @@ public class TablaMicro {
     private ArrayList<Character> process;
     private ArrayList<Integer> tCambioContexto, tEjecucion, tVencimientoQ, tBloqueo, tTotal, tInicial, tFinal;
     private int tiempoI = 0;
-
     boolean microVacio = true;
 
     public TablaMicro(int ID_Micro){
