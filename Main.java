@@ -77,7 +77,7 @@ public class Main{
 	public static void despachador(){
 		mic = new TablaMicro[micros];
 		for(int i=0; i<micros; i++){
-			mic[i] = new TablaMicro(i);
+			mic[i] = new TablaMicro(i + 1);
 		}
 		counter = 0;
 		m = mic[0];
@@ -171,7 +171,7 @@ public class Main{
 		if(tiempoLlegada == 0) return;
 
 		for(int i=0; i<mic.length; i++){
-			if(mic[i].getTiempoI() != 0 && mic[i].getTiempoI() < tiempoLlegada){
+			if(mic[i].getTiempoI() < tiempoLlegada){
 				mic[i].setTiempoI(tiempoLlegada);
 				mic[i].setMicroVacio(true);
 			}
