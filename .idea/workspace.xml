@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cafd991-fe9d-405a-8194-7619d6571f9c" name="Default Changelist" comment="" />
+    <list default="true" id="3cafd991-fe9d-405a-8194-7619d6571f9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,35 +33,45 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding>
-                <element signature="method#main#0;class#Main#0" />
-                <element signature="method#questions#0;class#Main#0" />
-                <element signature="method#generateMap#0;class#Main#0" />
-                <element signature="method#generateStacks#0;class#Main#0" />
-                <element signature="method#despachador#0;class#Main#0" />
-                <element signature="e#2056#2092#1" />
-                <element signature="method#processStacks#0;class#Main#0" />
-                <element signature="method#chooseMicroprocessor#0;class#Main#0" />
-                <element signature="method#igualarTiempoLLegada#0;class#Main#0" />
-                <element signature="method#printMicros#0;class#Main#0" />
+                <element signature="e#59#60#0" expanded="true" />
+                <element signature="e#83#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TablaMicro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="method#TablaMicro#0;class#TablaMicro#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TablaMicro.java">
+        <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="520">
+              <caret line="161" column="48" selection-start-line="161" selection-start-column="48" selection-end-line="161" selection-end-column="48" />
               <folding>
-                <element signature="method#TablaMicro#0;class#TablaMicro#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#questionPanel#0;class#GUI#0" />
+                <element signature="method#generateMap#0;class#GUI#0" />
+                <element signature="method#despachador#0;class#GUI#0" />
+                <element signature="method#processStacks#0;class#GUI#0" />
+                <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
+                <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
               </folding>
             </state>
           </provider>
@@ -84,6 +100,7 @@
         <option value="$PROJECT_DIR$/TablaP.java" />
         <option value="$PROJECT_DIR$/TablaMicro.java" />
         <option value="$PROJECT_DIR$/Main.java" />
+        <option value="$PROJECT_DIR$/GUI.java" />
       </list>
     </option>
   </component>
@@ -94,8 +111,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -104,8 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,6 +131,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,11 +188,14 @@
       <workItem from="1571173373077" duration="4744000" />
       <workItem from="1571263546773" duration="1303000" />
       <workItem from="1571267939003" duration="4597000" />
+      <workItem from="1571284166978" duration="540000" />
+      <workItem from="1571599618560" duration="6486000" />
+      <workItem from="1571609423831" duration="1362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25056000" />
+    <option name="totallyTimeSpent" value="33444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,7 +209,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.115446284" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.11513859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -218,7 +237,7 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Run" order="9" weight="0.7819348" />
+      <window_info anchor="right" id="Run" order="9" weight="0.5154584" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.11567164" />
@@ -257,31 +276,39 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TablaP.java" />
-    <entry file="file://$PROJECT_DIR$/Main.java">
+    <entry file="file://$PROJECT_DIR$/TablaMicro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
-            <element signature="method#main#0;class#Main#0" />
-            <element signature="method#questions#0;class#Main#0" />
-            <element signature="method#generateMap#0;class#Main#0" />
-            <element signature="method#generateStacks#0;class#Main#0" />
-            <element signature="method#despachador#0;class#Main#0" />
-            <element signature="e#2056#2092#1" />
-            <element signature="method#processStacks#0;class#Main#0" />
-            <element signature="method#chooseMicroprocessor#0;class#Main#0" />
-            <element signature="method#igualarTiempoLLegada#0;class#Main#0" />
-            <element signature="method#printMicros#0;class#Main#0" />
+            <element signature="method#TablaMicro#0;class#TablaMicro#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TablaMicro.java">
+    <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
-            <element signature="method#TablaMicro#0;class#TablaMicro#0" />
+            <element signature="e#59#60#0" expanded="true" />
+            <element signature="e#83#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="161" column="48" selection-start-line="161" selection-start-column="48" selection-end-line="161" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#questionPanel#0;class#GUI#0" />
+            <element signature="method#generateMap#0;class#GUI#0" />
+            <element signature="method#despachador#0;class#GUI#0" />
+            <element signature="method#processStacks#0;class#GUI#0" />
+            <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
+            <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
           </folding>
         </state>
       </provider>
