@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cafd991-fe9d-405a-8194-7619d6571f9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Despachador/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding>
                 <element signature="e#59#60#0" expanded="true" />
                 <element signature="e#83#84#0" expanded="true" />
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TablaMicro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="901">
+              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
               <folding>
                 <element signature="method#TablaMicro#0;class#TablaMicro#0" />
               </folding>
@@ -62,18 +61,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="142" column="33" lean-forward="true" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+            <state relative-caret-position="517">
+              <caret line="297" column="17" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#GUI#0;class#GUI#0" />
-                <element signature="method#questionPanel#0;class#GUI#0" />
-                <element signature="method#generateMap#0;class#GUI#0" />
-                <element signature="method#generateStacks#0;class#GUI#0" />
+                <element signature="method#generateDataStructures#0;class#GUI#0" />
                 <element signature="method#despachador#0;class#GUI#0" />
-                <element signature="method#processStacks#0;class#GUI#0" />
-                <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
-                <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
               </folding>
             </state>
           </provider>
@@ -100,8 +93,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TablaP.java" />
-        <option value="$PROJECT_DIR$/TablaMicro.java" />
         <option value="$PROJECT_DIR$/Main.java" />
+        <option value="$PROJECT_DIR$/TablaMicro.java" />
         <option value="$PROJECT_DIR$/GUI.java" />
       </list>
     </option>
@@ -192,12 +185,14 @@
       <workItem from="1571267939003" duration="4597000" />
       <workItem from="1571284166978" duration="540000" />
       <workItem from="1571599618560" duration="6486000" />
-      <workItem from="1571609423831" duration="388000" />
+      <workItem from="1571609423831" duration="1362000" />
+      <workItem from="1571779122290" duration="2702000" />
+      <workItem from="1571781920165" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32470000" />
+    <option name="totallyTimeSpent" value="36300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,7 +235,7 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Run" order="9" weight="0.79371" />
+      <window_info anchor="right" id="Run" order="9" weight="0.3704691" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.11567164" />
@@ -279,10 +274,17 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TablaP.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="861" column="22" selection-start-line="861" selection-start-column="22" selection-end-line="861" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <element signature="e#59#60#0" expanded="true" />
             <element signature="e#83#84#0" expanded="true" />
@@ -292,8 +294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TablaMicro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="901">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="method#TablaMicro#0;class#TablaMicro#0" />
           </folding>
@@ -302,18 +304,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="142" column="33" lean-forward="true" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+        <state relative-caret-position="517">
+          <caret line="297" column="17" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GUI#0;class#GUI#0" />
-            <element signature="method#questionPanel#0;class#GUI#0" />
-            <element signature="method#generateMap#0;class#GUI#0" />
-            <element signature="method#generateStacks#0;class#GUI#0" />
+            <element signature="method#generateDataStructures#0;class#GUI#0" />
             <element signature="method#despachador#0;class#GUI#0" />
-            <element signature="method#processStacks#0;class#GUI#0" />
-            <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
-            <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
           </folding>
         </state>
       </provider>

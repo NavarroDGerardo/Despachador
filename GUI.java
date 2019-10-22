@@ -258,7 +258,8 @@ public class GUI extends JFrame {
         int tiempoFinal = 0;
 
         while(!proStack.isEmpty()){
-            chooseMicroprocessor();
+            chooseMicroprocessor(llegadaPro);
+
             if(m.getTiempoI() < llegadaPro) m.setTiempoI(llegadaPro);
 
             tiempoEjecucion = process.get(proStack.peek());
@@ -286,6 +287,16 @@ public class GUI extends JFrame {
             if(tVencimiento < 0) tVencimiento = 0;
 
             if(m.isMicroVacio()){
+                if(llegadaPro != 0){
+                    m.getProcess().add('-');
+                    m.gettCambioContexto().add(0);
+                    m.gettEjecucion().add(0);
+                    m.gettVencimientoQ().add(0);
+                    m.gettBloqueo().add(0);
+                    m.gettTotal().add(0);
+                    m.gettInicial().add(0);
+                    m.gettFinal().add(llegadaPro);
+                }
                 m.gettCambioContexto().add(0);
                 m.setMicroVacio(false);
                 tiempoTotal = 0;
@@ -311,7 +322,7 @@ public class GUI extends JFrame {
         }
     }
 
-    public static void chooseMicroprocessor(){
+    public static void chooseMicroprocessor(int llegadaPro){
         TablaMicro micro = mic[0];
         for(int i=0; i<mic.length; i++){
             if(micro.getTiempoI() > mic[i].getTiempoI()){
