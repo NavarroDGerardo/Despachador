@@ -275,12 +275,14 @@ public class GUI extends JFrame {
             if(tiempoEjecucion > 800 && tiempoEjecucion < 10001){
                 tiempoBloqueo = tb * 5;
             }
+            double te = tiempoEjecucion;
+            double q = quantum;
             tiempoVenciminetoCuantum = tiempoEjecucion / quantum;
             tVencimiento = (int)tiempoVenciminetoCuantum;
 
-            if(tVencimiento < tiempoVenciminetoCuantum){
+            if(tVencimiento < (te / q)){
                 tVencimiento = tVencimiento * tcc;
-            }else if(tVencimiento == tiempoVenciminetoCuantum || tVencimiento > tiempoVenciminetoCuantum){
+            }else if(tVencimiento == (te / q) || tVencimiento > (te / q)){
                 tVencimiento = (tVencimiento - 1) * tcc;
             }
 

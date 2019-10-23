@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cafd991-fe9d-405a-8194-7619d6571f9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,12 +58,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="297" column="17" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
+            <state relative-caret-position="1118">
+              <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#GUI#0;class#GUI#0" />
+                <element signature="method#questionPanel#0;class#GUI#0" />
+                <element signature="method#showTables#0;class#GUI#0" />
                 <element signature="method#generateDataStructures#0;class#GUI#0" />
                 <element signature="method#despachador#0;class#GUI#0" />
+                <element signature="method#processStacks#0;class#GUI#0" />
+                <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
               </folding>
             </state>
           </provider>
@@ -114,21 +116,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Despachador" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Despachador" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -138,6 +126,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
@@ -187,12 +176,14 @@
       <workItem from="1571599618560" duration="6486000" />
       <workItem from="1571609423831" duration="1362000" />
       <workItem from="1571779122290" duration="2702000" />
-      <workItem from="1571781920165" duration="154000" />
+      <workItem from="1571781920165" duration="3129000" />
+      <workItem from="1571789942018" duration="674000" />
+      <workItem from="1571793651483" duration="441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36300000" />
+    <option name="totallyTimeSpent" value="40390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,12 +295,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="297" column="17" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
+        <state relative-caret-position="1118">
+          <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#GUI#0;class#GUI#0" />
+            <element signature="method#questionPanel#0;class#GUI#0" />
+            <element signature="method#showTables#0;class#GUI#0" />
             <element signature="method#generateDataStructures#0;class#GUI#0" />
             <element signature="method#despachador#0;class#GUI#0" />
+            <element signature="method#processStacks#0;class#GUI#0" />
+            <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
           </folding>
         </state>
       </provider>

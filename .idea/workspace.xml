@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Despachador/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Despachador/GUI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,16 +64,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
+            <state relative-caret-position="437">
+              <caret line="279" column="65" lean-forward="true" selection-start-line="279" selection-start-column="65" selection-end-line="279" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GUI#0;class#GUI#0" />
                 <element signature="method#questionPanel#0;class#GUI#0" />
                 <element signature="method#showTables#0;class#GUI#0" />
                 <element signature="method#generateDataStructures#0;class#GUI#0" />
-                <element signature="method#despachador#0;class#GUI#0" />
-                <element signature="method#processStacks#0;class#GUI#0" />
                 <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
                 <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
               </folding>
@@ -120,21 +121,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Despachador" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Despachador" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -195,11 +182,14 @@
       <workItem from="1571609423831" duration="1362000" />
       <workItem from="1571779122290" duration="2702000" />
       <workItem from="1571781920165" duration="3129000" />
+      <workItem from="1571789942018" duration="674000" />
+      <workItem from="1571793651483" duration="441000" />
+      <workItem from="1571804356699" duration="1004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39275000" />
+    <option name="totallyTimeSpent" value="41394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -241,7 +231,7 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Run" order="9" weight="0.3704691" />
+      <window_info anchor="right" id="Run" order="9" weight="0.40191898" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.11567164" />
@@ -310,16 +300,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
+        <state relative-caret-position="437">
+          <caret line="279" column="65" lean-forward="true" selection-start-line="279" selection-start-column="65" selection-end-line="279" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#GUI#0;class#GUI#0" />
             <element signature="method#questionPanel#0;class#GUI#0" />
             <element signature="method#showTables#0;class#GUI#0" />
             <element signature="method#generateDataStructures#0;class#GUI#0" />
-            <element signature="method#despachador#0;class#GUI#0" />
-            <element signature="method#processStacks#0;class#GUI#0" />
             <element signature="method#chooseMicroprocessor#0;class#GUI#0" />
             <element signature="method#igualarTiempoLLegada#0;class#GUI#0" />
           </folding>
